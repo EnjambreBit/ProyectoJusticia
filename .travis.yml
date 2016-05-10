@@ -1,22 +1,22 @@
----
 language: node_js
 node_js:
-  - "4"
-
+- '4'
 sudo: false
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 before_install:
-  - npm config set spin false
-  - npm install -g bower
-  - npm install phantomjs-prebuilt
-
+- npm config set spin false
+- npm install -g bower
+- npm install phantomjs-prebuilt
 install:
-  - npm install
-  - bower install
-
+- npm install
+- bower install
 script:
-  - npm test
+- npm test
+after_success:
+- bash ./deploy.sh
+env:
+  global:
+  - GITHUB_REPO: EnjambreBit/ProyectoJusticia
+  - secure: C9ngolDFlj+MFw03mRx8xzLS+v2shn+lvFkHQjstrP76uAQjejsV4BGkPMkgqbUa6vLri+C23SRTAkMfylLrl8QAVsY1nNbQ6eL+eHa3PxoDDAYKcYysiabn3CZvkYJJ6TNX6FGm9ULcikrUQHdth+hDj2LdDtt2hmq2gvYNf8XuY4mYsvcDs1KbaBO7F1N0ETWsE9RzW+duB46i8YlU1FonX/h3flvNyWokYaR81W4xVvU8C0cn/1GPUrGLmzQgkEI45PgJwKKMySv1SyxxZ0R1+9P6l/bindOYbo+ZDFmDSVyXALhAFnbs9iNb3xXsOzP7/DQBGgNz5pPoEe8nfMRHVChWzeJcFa3ceNlnsfup344LBfsrpF5DkFAWxWuYngAkUm0/s38s/60JB7Wn4h7n4pJsj+9RYaLUPJElThPZz4TS0hd6EWJdAgRdnL7JU0QK06fcRWNcHi1Qu+UcM7jcJdLcHb3T+xpQWHncqYIUaH4fau+umysMlUgaVY1QLeerTdGReqGXsmCBmJTR6UpHNRfXUTk78fymi9ZzTtEcA/Y4rh1soUQ82mFjg7PknnJoJd8vCMkg8eYyPwbRd9/ZDylG93dvya1zt8qFkSruxX3wLh2qcAmakf2U29Kr6OKdJmxXkY/tAItClKq7jHytEF0a87DdHwxr7rcJ/lc=
