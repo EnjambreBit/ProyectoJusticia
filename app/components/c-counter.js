@@ -8,8 +8,7 @@ export default Ember.Component.extend({
         <div class="counter-box second"><div class="number">%H</div><span>Hours</span></div>
         <div class="counter-box third"><div class="number">%M</div><span>Minutes</span></div>
         <div class="counter-box last"><div class="number">%S</div><span>Seconds</span></div></div>
-        `
-      ));
+      `));
     });
   }
 });
