@@ -6,29 +6,29 @@
 
 $(window).load(function() {
 	"use strict";
-	
+
 	$('.globload').fadeOut("slow")
-	
-	
+
+
 	setTimeout(function() {
-		
+
 		$("#logo").addClass("fadeIn").removeClass("opacity-0");
-		
+
 	}, 800);
-	
+
 	setTimeout(function() {
-		
+
 		$("#counter").addClass("fadeIn").removeClass("opacity-0");
-		
+
 	}, 1600);
-	
-	
+
+
 	setTimeout(function() {
-		
+
 		$("#subscribe").addClass("fadeIn").removeClass("opacity-0");
-		
+
 	}, 2400);
-		
+
 });
 
 /* ================================= */
@@ -43,8 +43,8 @@ $(window).load(function() {
 					+ '<div class="counter-box last"><div class="number">%S</div><span>Seconds</span></div></div>'
 				));
 			});
-//		
-		
+//
+
 /* ================================= */
 /* :::::::::: 3. Carousel :::::::::: */
 /* ================================= */
@@ -69,7 +69,7 @@ $(document).ready(function() {
             	loopBottom: true,
             	loopTop: true
             });
-			
+
         });
 
 /* ================================= */
@@ -91,7 +91,7 @@ jQuery(document).ready(function() {
     $('input,textarea').blur(function(){
        $(this).attr('placeholder',$(this).data('placeholder'));
     });
-	
+
 	$('input, textarea').placeholder();
 
 
@@ -111,8 +111,8 @@ jQuery(document).ready(function() {
 				disableDefaultUI: true,
 				scrollwheel: false,
 				// Google Map Color Styles
-				styles: [	
-			
+				styles: [
+
 					{	stylers:[			{hue:'#f1e7c0'},			{invert_lightness:true},			{saturation:-80},			{lightness:20},			{gamma:0}	]	},
 					{		featureType:'water',		elementType:'geometry',		stylers:[			{color:'#333333'},]	},
 					{'featureType':'landscape','stylers':[{'color':'#2B2D35'}]},]
@@ -122,7 +122,7 @@ jQuery(document).ready(function() {
 
 			// Marker Image
 			var image = 'img/pin.png';
-			
+
 
 		  	// -------------------------- First Marker
 
@@ -137,8 +137,8 @@ jQuery(document).ready(function() {
 				  icon: image
 			  });
 
-		
-$(document).ready(function() {		
+
+$(document).ready(function() {
 			$("#showMap").click(function(){
                 $("#map_container").removeClass("index-999 invisible").addClass("animated fadeIn visible index999");
 				$("#closeMap").removeClass("index-999 invisible").addClass("visible index999");

@@ -1,36 +1,7 @@
-<div class="globload">
-    <div class="spinner animated fadeIn">
+<!-- representa la pantalla inicial que se carga y tapa el resto del contenido, tipo portada. Se oculta luego de unos segundos. -->
+{{c-loadingInitialScreen}}
 
-        <!-- LOGO -->
-        <img src="img/logo_placeholder.png" alt="Proyecto Justicia"  />
-
-        <div class="preloader"></div>
-
-        <h6>CARGANDO</h6>
-
-    </div>
-</div>
-
-
-
-
-
-<!-- ===== Loading ===== -->
-
-<div id="myContainer">
-
-<!-- ************** START / GLISS MAP ************** -->
-<div id="map_container" class="index-999 invisible">
-<a id="closeMap">
-
-                    <i class="fa fa-compress fa-2x"></i>
-
-            </a>
-    <div id="map_canvas">
-
-    </div>
-</div>
-<!-- ************** END / GLISS MAP ************** -->
+{{#c-scroll}}
 
 
   <!-- SECTIONS LEFT START -->
@@ -53,17 +24,31 @@
                 </div>
 
                 <div class="col-lg-12 col-md-12 col-xs-12">
-
-                    <!-- START COUNTDOWN -->
-                    <div id="counter" class="animated opacity-0"></div>
-                    <!-- END COUNTDOWN -->
-
+                  {{c-counter}}
                 </div>
 
             </div>
 
         </div>
         <!-- 1ST SECTION LEFT END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- 2ND SECTION LEFT START -->
         <div class="ms-section" id="left2">
@@ -349,9 +334,6 @@
 
     </div>
     <!-- SECTIONS RIGHT END -->
-
-</div>
-<!-- END myContainer -->
-
+{{/c-scroll}}
 
 {{outlet}}
