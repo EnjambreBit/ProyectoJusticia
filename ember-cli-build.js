@@ -9,8 +9,15 @@ module.exports = function(defaults) {
 
   app.import("vendor/bootstrap.min.css");
   app.import("vendor/animate.css");
-  app.import("vendor/font-awesome.min.css");
   app.import("vendor/jquery.multiscroll.css");
+
+  app.import("vendor/js/bootstrap.min.js");
+  app.import("vendor/js/jquery.easings.min.js");
+  app.import("vendor/js/jquery.multiscroll.js");
+  app.import("vendor/js/jquery.countdown.js");
+  app.import("vendor/js/contact_me.js");
+  app.import("vendor/js/notifyMe.js");
+  app.import("vendor/js/jquery.placeholder.js");
 
   return app.toTree();
 };
