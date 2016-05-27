@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'URW Chancery L Web';
+  src: url("type/urw_chancery/urw-chancery-l-medium-italic.eot");
+  src: url("type/urw_chancery/urw-chancery-l-medium-italic.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

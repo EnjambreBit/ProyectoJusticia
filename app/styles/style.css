@@ -157,17 +157,35 @@ h4 {
 	visibility: hidden;
 }
 
+.cita {
+	font-family: 'URW Chancery L Web';
+	color: #2b2200;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.cita .firma {
+	background: url('../img/bg_firma.png') no-repeat bottom center;
+	width: auto;
+	background-position: center 25px;
+	padding: 0 20px 10px 20px;
+	background-size: contain;
+	font-family: 'URW Bookman L Web';
+	font-size: 0.6em;
+	float: right;
+}
+
 /* ================================= */
 /* ::::::::: 1.1 Sections :::::::::: */
 /* ================================= */
 
 #left1 {
-	background: url('../img/1.jpg')no-repeat top right;
+	background: url('../img/bg_portada_left.jpg')no-repeat top right;
 	background-size: cover;
 }
 
 #right1 {
-	background: url('../img/2.jpg')no-repeat top left;
+	background: url('../img/bg_portada_right.jpg')no-repeat top left;
 	background-size: cover;
 }
 
@@ -182,22 +200,22 @@ h4 {
 }
 
 #left2 {
-	background: url('../img/3.jpg')no-repeat top right;
+	background: url('../img/bg_derecho-ambiental_left.jpg')no-repeat top right;
 	background-size: cover;
 }
 
 #right2 {
-	background: url('../img/4.jpg')no-repeat top left;
+	background: url('../img/bg_derecho-ambiental_right.jpg')no-repeat top left;
 	background-size: cover;
 }
 
 #left3 {
-	background: url('../img/5.jpg')no-repeat top right;
+	background: url('../img/bg_derecho-laboral_left.jpg')no-repeat top right;
 	background-size: cover;
 }
 
 #right3 {
-	background: url('../img/6.jpg')no-repeat top left;
+	background: url('../img/bg_derecho-laboral_right.jpg')no-repeat top left;
 	background-size: cover;
 }
 
@@ -322,7 +340,9 @@ button#showMap {
 	overflow: hidden;
 	width: 100%;
 	min-height: 150px;
+/*
 	position: absolute;
+*/
 	z-index:2;
 }
 
@@ -706,13 +726,16 @@ ul.social a:hover {
 /* ================================= */
 
 .globload {
-	background: #3b405b;
+	background: #3b405b url('../img/bg_loading.jpg') no-repeat top center;
+	background-size: cover;
+/*
 	background: -moz-radial-gradient(center, ellipse cover, #3b405b 0%, #171b33 100%);
 	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3b405b), color-stop(100%, #171b33));
 	background: -webkit-radial-gradient(center, ellipse cover, #3b405b 0%, #171b33 100%);
 	background: -o-radial-gradient(center, ellipse cover, #3b405b 0%, #171b33 100%);
 	background: -ms-radial-gradient(center, ellipse cover, #3b405b 0%, #171b33 100%);
 	background: radial-gradient(ellipse at center, #3b405b 0%, #171b33 100%);
+*/
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -737,7 +760,7 @@ ul.social a:hover {
 	position: absolute;
 	margin: auto;
 	text-align: center;
-	top: 0;
+	top: 30%;
 	bottom: 0;
 	left: 0;
 	right: 0;

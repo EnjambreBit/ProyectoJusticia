@@ -9,6 +9,12 @@ module.exports = function(defaults) {
 
   app.import("vendor/bootstrap.min.css");
   app.import("vendor/animate.css");
+  app.import("vendor/urw_bookman.css");
+  app.import("vendor/urw_chancery.css");
+  app.import("vendor/type/urw_bookman/urw-bookman-l-light-italic.ttf", {destDir:'assets/type/urw_bookman'});
+  app.import("vendor/type/urw_bookman/urw-bookman-l-light-italic.eot", {destDir:'assets/type/urw_bookman'});
+  app.import("vendor/type/urw_chancery/urw-chancery-l-medium-italic.ttf", {destDir:'assets/type/urw_chancery'});
+  app.import("vendor/type/urw_chancery/urw-chancery-l-medium-italic.eot", {destDir:'assets/type/urw_chancery'});
 
   app.import("vendor/js/bootstrap.min.js");
   app.import("vendor/js/jquery.easings.min.js");
